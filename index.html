@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ajouter USDM à MetaMask</title>
+  <title>Ajouter EUROMS à MetaMask</title>
 </head>
 <body style="text-align:center; margin-top:100px; font-family:Arial;">
 
-  <h2>Ajouter USDM à MetaMask</h2>
+  <h2>Ajouter EUROMS à MetaMask</h2>
 
   <button onclick="addToken()" style="padding:15px 30px; font-size:18px;">
-    Ajouter le Token USDM
+    Ajouter le Token EUROMS
   </button>
 
   <script>
@@ -20,16 +20,16 @@
             params: {
               type: 'ERC20',
               options: {
-                address: '0xA7481819d49f437848aB566ef5cCD8248d74DF36',
-                symbol: 'USDM',
+                address: '0x531B876fc439F64Be5922551FE222aBf08B8D08E', // adresse du contrat EUROMS
+                symbol: 'EUROMS',
                 decimals: 18,
-                image: 'https://raw.githubusercontent.com/fotsoromevrard-art/euroms-logo/main/logo.png'
+                image: 'https://raw.githubusercontent.com/fotsoromevrard-art/euroms-logo/main/logo.png' // lien RAW du logo
               },
             },
           });
 
           if (wasAdded) {
-            alert('USDM ajouté avec succès !');
+            alert('EUROMS ajouté avec succès !');
           } else {
             alert('Ajout annulé.');
           }
@@ -45,4 +45,3 @@
 
 </body>
 </html>
-
